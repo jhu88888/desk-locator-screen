@@ -1,0 +1,23 @@
+<div class="main-wrapper">
+  <div class="toolbar">
+    <h1>Danbury Hall, Durham, NC</h1>
+    <h3>3rd Floor, Section B Seats Availability Map</h3>
+  </div>
+  <div class="map-wrapper" *ngIf="showMapView">
+    <div *ngFor="let cube of cubes" class="cube">
+      <div *ngFor="let desk of cube.desks; let i = index" 
+        class="desk" 
+        [ngClass]="'desk'+i"
+        [class.reserved]="desk.reserved">
+        {{desk.reserved ? 'Seats Taken' : 'Seats Available'}}
+      </div>
+    </div>
+  </div>
+
+  <div class="analysis-wrapper" *ngIf="!showMapView">
+    123
+  </div>
+  <div class="action-toolbar">
+    <a (click)="toggleMapView()">{{showMapView ? 'Analysis View' : 'Map View'}}</a>
+  </div>
+</div>

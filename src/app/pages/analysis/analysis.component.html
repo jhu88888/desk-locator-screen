@@ -1,0 +1,17 @@
+<div class="main-wrapper">
+  <div class="toolbar">
+    <h1>Danbury Hall, Durham, NC</h1>
+    <h3>3rd Floor, Section B Seats Availability Map</h3>
+  </div>
+  <div class="map-wrapper">
+    <div *ngFor="let cube of cubes" class="cube">
+      <div *ngFor="let desk of cube.desks; let i = index" class="desk" [ngClass]="'desk'+i"
+        [class.reserved]="desk.reserved">
+        {{i+1}}
+      </div>
+    </div>
+  </div>
+  <div class="action-toolbar">
+    <a routerLink="/analysis">Go Analysis</a>
+  </div>
+</div>

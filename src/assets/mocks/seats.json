@@ -1,0 +1,146 @@
+[
+  {
+    "desks": [
+      {
+        "id": "d073d5549d7b",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7c",
+        "reserved": true,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7d",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7e",
+        "reserved": false,
+        "seater": ""
+      }
+    ]
+  },
+  {
+    "desks": [
+      {
+        "id": "d073d5549d7f",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7g",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7h",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7i",
+        "reserved": false,
+        "seater": ""
+      }
+    ]
+  },
+  {
+    "desks": [
+      {
+        "id": "d073d5549d7j",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7k",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7l",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7m",
+        "reserved": false,
+        "seater": ""
+      }
+    ]
+  },
+  {
+    "desks": [
+      {
+        "id": "d073d5549d7n",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7o",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7p",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7q",
+        "reserved": false,
+        "seater": ""
+      }
+    ]
+  },
+  {
+    "desks": [
+      {
+        "id": "d073d5549d7r",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7s",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7t",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7u",
+        "reserved": false,
+        "seater": ""
+      }
+    ]
+  },
+  {
+    "desks": [
+      {
+        "id": "d073d5549d7v",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7w",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7x",
+        "reserved": false,
+        "seater": ""
+      },
+      {
+        "id": "d073d5549d7y",
+        "reserved": false,
+        "seater": ""
+      }
+    ]
+  }
+]
