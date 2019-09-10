@@ -22,7 +22,7 @@ export class MapComponent implements OnInit {
 
     setInterval(() => {
       this.fetchSeatsStatus();
-    }, 10000)
+    }, 5000)
     
   }
 
