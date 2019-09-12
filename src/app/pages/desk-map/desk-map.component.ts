@@ -26,7 +26,7 @@ export class DeskMapComponent implements OnInit {
     this.floor = '3rd';
     this.quadrant = 'B'
     this.startPoint = 2;
-    this.showMore = true;
+    this.showMore = false;
 
     this.fetchDesks();
     this.fetchDesksStatus();
