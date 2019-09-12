@@ -1,60 +1,86 @@
 .main-wrapper {
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
 
-  .toolbar {
-    width: 80%;
+  .info-wrapper {
+    width: 25%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5em;
+    color: #95a5a6;
+
+    .title {
+      .pin-icon {
+        margin-right: .5em;
+        color: #bdc3c7;
+      }
+    }
+
+    .sub-title {
+      margin: 0;
+    }
+
+    .floor-info {
+      color: #2ecc71;
+      font-size: 1.5em;
+    }
+
+    .quadrant-info {
+      color: #2ecc71;
+      font-size: 1.5em;
+    }
+
+    .stats-wrapper {
+      flex-direction: row;
+      margin-top: 2em;
+
+      .seats-taken {
+        font-weight: 700;
+        font-size: 10em;
+        color: #2ecc71;
+      }
+
+      .seats-total {
+        color: #7f8c8d;
+      }
+    }
+
+    .description{
+      margin: 0;
+    }
+
+    .action-toolbar {
+      margin-top: 2em;
+      cursor: pointer;
+      color: #95a5a6;
+    }
   }
 
-  .map-wrapper {
-    width: 80%;
-    padding: 5em 0;
-    display: flex;
-    flex-direction: row;
-
-   .cube {
+  .charts-wrapper {
+    background-color: #ecf0f1;
     flex: 1 auto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 200px;
-    margin-right: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    position: relative;
 
-    .desk {
-      background-color: #2ecc71;
-      width: calc(50% - 10px);
-      height: 100px;
-      margin: 0 5px 5px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 700;
-      font-size: 1em;
-      color: #fff;
+    .chart-card {
+      padding: 1em;
+      border-radius: 1em;
+      background-color: #fff;
+      margin: 0 1em 1em 0;
     }
-
-    .desk0 {
-      border-radius: 1em 0 0 0;
-    }
-
-    .desk1 {
-      border-radius: 0 1em 0 0;
-    }
-
-    .desk2 {
-      border-radius: 0 0 0 1em;
-    }
-    
-    .desk3 {
-      border-radius: 0 0 1em 0;
-    }
-
-    .reserved {
-      background-color: #e74c3c;
-    }
-   } 
   }
+}
 
+.chart1-title {
+  color: red !important;
 }

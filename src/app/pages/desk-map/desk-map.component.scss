@@ -1,0 +1,269 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+
+  .info-wrapper {
+    width: 25%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5em;
+    color: #95a5a6;
+
+    .title {
+      .pin-icon {
+        margin-right: .5em;
+        color: #bdc3c7;
+      }
+    }
+
+    .sub-title {
+      margin: 0;
+    }
+
+    .floor-info {
+      color: #2ecc71;
+      font-size: 1.5em;
+    }
+
+    .quadrant-info {
+      color: #2ecc71;
+      font-size: 1.5em;
+    }
+
+    .stats-wrapper {
+      flex-direction: row;
+      margin-top: 2em;
+
+      .seats-taken {
+        font-weight: 700;
+        font-size: 10em;
+        color: #2ecc71;
+      }
+
+      .seats-total {
+        color: #7f8c8d;
+      }
+    }
+
+    .description{
+      margin: 0;
+    }
+
+    .action-toolbar {
+      margin-top: 2em;
+      cursor: pointer;
+      color: #95a5a6;
+    }
+  }
+
+  .map-wrapper {
+    background-color: #ecf0f1;
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+
+    .start-point {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: .5em;
+      margin: 2em;
+      border-radius: .2em;
+      background-color: #f39c12;
+      font-size: .6em;
+      color: #fff;
+
+      .start-icon {
+        font-size: 2em;
+      }
+
+      .start-point-title {
+        margin: 0;
+      }
+    }
+
+    .start-point0 {
+      top: 0;
+      left: 0;
+    }
+
+    .start-point1 {
+      top: 0;
+      right: 0;
+    }
+
+    .start-point2 {
+      bottom: 0;
+      left: 0;
+    }
+
+    .start-point3 {
+      bottom: 0;
+      right: 0;
+    }
+
+    .cube {
+      flex: 1 auto;
+      display: flex;
+      flex-wrap: wrap;
+      width: 80px;
+      margin-right: 5px;
+
+      .desk-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        .jackNum {
+          font-size: .8em;
+          font-weight: 700;
+          // margin: 0;
+          text-transform: uppercase;
+          text-align: center;
+          padding: 0.5em .1em;
+          color: #95a5a6;
+          background-color: #fff;
+        }
+
+        .desk {
+          background-color: #2ecc71;
+          width: calc(100% - 5px);
+          height: 100px;
+          margin: 0 5px 5px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-weight: 100;
+          font-size: 1em;
+          color: #34495e;
+          border: 1px solid #27ae60;
+          transition: all ease .5s;
+
+          .user-icon {
+            font-size: 2em;
+          }
+
+          .chair-icon {
+            width: 40%;
+          }
+        }
+    
+        .desk0 {
+          border-radius: 1em 0 0 0;
+          margin-bottom: 5px;
+        }
+    
+        .desk1 {
+          border-radius: 0 1em 0 0;
+          margin-bottom: 5px;
+        }
+    
+        .desk2 {
+          border-radius: 0 0 0 1em;
+          margin-bottom: 0;
+        }
+        
+        .desk3 {
+          border-radius: 0 0 1em 0;
+          margin-bottom: 0;
+        }
+    
+        .reserved {
+          background-color: #e74c3c;
+          border-color: #c0392b;
+          color: #fff;
+          transition: all ease .5s;
+        }
+      }
+     } 
+  }
+
+  .floor-map-wrapper {
+    background-color: #ecf0f1;
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+
+    .quadrant-card {
+      width: calc(50% - 2em - 2px);
+      border: 1px solid #ecf0f1;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      
+      .left-wrapper {
+        font-size: 6em;
+        font-weight: 700;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #a8d477;
+        width: 100%;
+        height: 100%;
+        max-width: 200px;
+
+        .outer-wrapper {
+          border: 10px solid #fff;
+          border-radius: 1em;
+          width: 100px;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .right-wrapper {
+        color: #bdc3c7;
+        padding: 1em;
+
+        .seats-taken {
+          font-weight: 700;
+          font-size: 10em;
+          color: #2ecc71;
+        }
+  
+        .seats-total {
+          font-size: 2em;
+          color: #7f8c8d;
+        }
+      }
+    }
+
+    .quadrant-card0 {
+      border-top: none;
+      border-left: none;
+    }
+
+    .quadrant-card1 {
+      border-top: none;
+      border-right: none;
+    }
+
+    .quadrant-card2 {
+      border-bottom: none;
+      border-left: none;
+    }
+
+    .quadrant-card3 {
+      border-bottom: none;
+      border-right: none;
+    }
+  }
+}

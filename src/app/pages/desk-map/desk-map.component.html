@@ -1,0 +1,49 @@
+<div class="main-wrapper">
+  <div class="info-wrapper">
+    <h2 class="title">
+      <fa class="pin-icon" name="map-marker"></fa>
+      Danbury Hall, Durham, NC
+    </h2>
+    <h3 class="sub-title">
+      <a (click)="showMore = !showMore"><span class="floor-info">{{floor}}</span> Floor</a><span *ngIf="!showMore">, Quadrant <span class="quadrant-info">{{quadrant}}</span></span>
+    </h3>
+    <div class="stats-wrapper" *ngIf="!showMore">
+      <span class="seats-taken">{{deskTotal - takenSeats.length}}</span> / <span class="seats-total">{{deskTotal}}</span>
+      <p class="description">Desks Are Available</p>
+    </div>
+    <div class="action-toolbar">
+      <fa routerLink="/analysis" class="pin-icon" name="cog"></fa>
+    </div>
+  </div>
+  <div class="map-wrapper" *ngIf="!showMore">
+    <div class="start-point animated bounce infinite slower" [ngClass]="'start-point' + startPoint">
+      <fa *ngIf="startPoint === 0 || startPoint === 1" class="start-icon" name="arrow-down"></fa>
+      <fa *ngIf="startPoint === 1 || startPoint === 2" class="start-icon" name="arrow-up"></fa>
+      <p class="start-point-title">You are HERE!</p>
+    </div>
+    <div *ngFor="let cube of cubes" class="cube">
+      <div *ngFor="let desk of cube.desks; let i = index" class="desk-wrapper">
+        <p class="jackNum" *ngIf="i === 0 || i === 1">{{desk.jack}}</p>
+        <div class="desk" 
+          [ngClass]="'desk'+i"
+          [class.reserved]="desk.reserved">
+          <fa *ngIf="desk.reserved" class="user-icon animated bounceInDown faster" name="user"></fa>
+          <img *ngIf="!desk.reserved" src="assets/images/chair.png" alt="chair" class="chair-icon">
+        </div>
+        <p class="jackNum" *ngIf="i === 2 || i === 3">{{desk.jack}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="floor-map-wrapper" *ngIf="showMore">
+    <div class="quadrant-card" *ngFor="let quadrant of quadrants; let i = index;" [ngClass]="'quadrant-card'+i">
+      <div class="left-wrapper">
+        <div class="outer-wrapper">
+          {{quadrant.quadrant}}
+        </div>
+      </div>
+      <div class="right-wrapper">
+        <span class="seats-taken">{{deskTotal - takenSeats.length}}</span> / <span class="seats-total">{{deskTotal}}</span><span> are available.</span>
+      </div>
+    </div>
+  </div>
+</div>

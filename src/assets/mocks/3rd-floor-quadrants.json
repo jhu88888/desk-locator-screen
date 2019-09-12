@@ -1,0 +1,22 @@
+[
+  {
+    "quadrant": "A",
+    "totalDesks": 0,
+    "reservedDesk": 0 
+  },
+  {
+    "quadrant": "B",
+    "totalDesks": 0,
+    "reservedDesk": 0 
+  },
+  {
+    "quadrant": "C",
+    "totalDesks": 0,
+    "reservedDesk": 0 
+  },
+  {
+    "quadrant": "D",
+    "totalDesks": 0,
+    "reservedDesk": 0 
+  }
+]
