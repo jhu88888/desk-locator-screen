@@ -3,13 +3,13 @@
     "desks": [
       {
         "id": "d073d5549d7b",
-        "jack": "Jack #9d7b",
+        "jack": "Jack #9d7b (B)",
         "reserved": false,
         "seater": ""
       },
       {
-        "id": "d073d5549d7c",
-        "jack": "Jack #9d7c",
+        "id": "d073d556213b",
+        "jack": "Jack #213b (B)",
         "reserved": false,
         "seater": ""
       },
